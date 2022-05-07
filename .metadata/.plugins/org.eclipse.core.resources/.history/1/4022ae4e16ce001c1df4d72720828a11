@@ -1,0 +1,38 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class MainScreen {
+
+	public static void main(String[] args) {
+		System.out.println("Welcome to the Movie List Application!");
+
+		System.out.println("There are 10 movies in this list.");
+
+		System.out.println("What cetegory are you interested in?");
+
+		Scanner scan = new Scanner(System.in);
+
+		String category = scan.nextLine();
+
+		System.out.println(category);
+		
+		List<String> movieList1 = new ArrayList<>();
+		movieList1.add(new String( "drama"));
+		movieList1.add(new String("drama"));
+		
+		/*ArrayList<String, String> movieList2 = new ArrayList<>();
+		movieList2.add( "Citizen Kane", "drama");
+		movieList2.add("Casablanca", "drama");*/
+		
+		List<Movie> movieList = new ArrayList<>();
+		movieList.add(new Movie("Citizen Kane", "drama"));
+		movieList.add(new Movie("Casablanca", "drama"));
+	
+		System.out.println(movieList);
+	}
+	
+	
+	}
+
+
